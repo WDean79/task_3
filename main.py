@@ -20,7 +20,7 @@ def create_merget_file(folder, filename):
     with open(filename + '.txt', 'w+') as merget_file:  
         merget_file.write(f'Даны файлы:\n')
         for file in create_file_list(folder):
-            merget_file.write(f'Назввание файла: {file[0]}\n')  
+            merget_file.write(f'Название файла: {file[0]}\n')  
             merget_file.write(f'Количество строк: {file[1]}\n')  
             for string in file[2]:
                 merget_file.write(string + '\n')  
